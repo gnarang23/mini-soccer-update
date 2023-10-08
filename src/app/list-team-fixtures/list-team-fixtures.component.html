@@ -1,0 +1,20 @@
+<ng-container *ngIf="fixtures.length > 0">
+  <table class="center">
+    <tr *ngFor="let fixture of fixtures; index as i">
+      <td><img [src]="fixture?.teams?.home?.logo" height="25px" /></td>
+      <td>{{ fixture?.teams?.home?.name }}</td>
+      <td>{{ fixture?.goals?.home }}</td>
+      <td>-</td>
+      <td>{{ fixture?.goals?.away }}</td>
+      <td>{{ fixture?.teams?.away?.name }}</td>
+      <td><img [src]="fixture?.teams?.away?.logo" height="25px" /></td>
+    </tr>
+  </table>
+
+<div class="text-center">
+  <button type="button" id="backButton" class="backBtn"(click)="back()">
+    Back
+  </button>
+</div>
+
+</ng-container>
