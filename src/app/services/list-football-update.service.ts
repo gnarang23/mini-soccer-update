@@ -12,7 +12,7 @@ import { Leagues } from '../models/league';
 export class ListFootballUpdateService {
   private readonly path: string = 'https://v3.football.api-sports.io';
   private readonly headers = {
-    'x-rapidapi-key': '0e846f11a1d46840591b936170a9183d',
+    'x-rapidapi-key': '44ae16ee0dfe663e9140b73516460aef',
   };
   private readonly leagueStandingsCache: Map<number, Standings[]> = new Map();
 
